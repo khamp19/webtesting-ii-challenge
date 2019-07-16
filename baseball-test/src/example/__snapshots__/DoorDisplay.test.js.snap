@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should show the right words for closed/locked 1`] = `ShallowWrapper {}`;
+
+exports[`it should show the right words for closed/unlocked 1`] = `ShallowWrapper {}`;
+
+exports[`it should show the right words for open/locked 1`] = `ShallowWrapper {}`;
+
+exports[`it should show the right words for open/unlocked 1`] = `ShallowWrapper {}`;
+
+exports[`it should start with the door closed 1`] = `ShallowWrapper {}`;
