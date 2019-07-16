@@ -7,3 +7,9 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+test.todo('it should start with the door locked')
+
+test.todo('it should show when the door is open')
+
+test.todo('it should show when the door is locked')
