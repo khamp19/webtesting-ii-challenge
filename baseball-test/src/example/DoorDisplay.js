@@ -23,13 +23,14 @@ class DoorDisplay extends Component {
   render() {
     return (
       <div className="test-example-code">
-        <div className="alert-btn" onClick={this.messageUser}>Click me!</div>
+        <h2>Testing Example</h2>
         <p>The door is {this.state.isOpen ? 'open' : 'closed'}</p>
-        <div className="open-btn" onClick={this.toggleOpen}>
-          <button onClick={this.toggleOpen}>open/close</button>
-        </div>
+        <button className="open-btn" onClick={this.toggleOpen}>open/close</button>
         <p>The door is {this.state.isLocked ? 'locked' : 'unlocked'}</p>
         <button className="lock-btn" onClick={this.toggleLock}>lock/unlock</button>
+        <div className="alert-btn" onClick={this.messageUser}>
+          <button>Click me!</button>
+        </div>
       </div>
     );
   }

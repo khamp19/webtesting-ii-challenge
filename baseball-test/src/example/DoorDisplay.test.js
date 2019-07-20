@@ -15,7 +15,6 @@ it('it should start with the door closed', () => {
   expect(wrapper).toMatchSnapshot()
 })
 
-
 test.todo('should start with the door locked')
 
 it('it should show the right words for open/unlocked', () => {
@@ -38,26 +37,33 @@ it('it should show the right words for closed/locked', () => {
   expect(wrapper).toMatchSnapshot()
 })
 
-//button not working
+//button test 1
 it('should change isOpen state on button click', () => {
   const wrapper = shallow(<DoorDisplay />)
   const instance = wrapper.instance();
-  const button = wrapper.find('.open-btn'); //not finding
+  const button = wrapper.find('button').first(); 
 
   expect(instance.state.isOpen).toBe(false);
-
   button.simulate('click')
-
   expect(instance.state.isOpen).toBe(true);
-
   button.simulate('click')
-
   expect(instance.state.isOpen).toBe(false);
-
 })
 
-test.todo('should change isLocked state on button click')
+//button test 2
+it('should change isLocked state on button click', ()=> {
+  const wrapper = shallow(<DoorDisplay />)
+  const instance = wrapper.instance();
+  const button = wrapper.find('button.lock-btn')
 
+  expect(instance.state.isLocked).toBe(true);
+  button.simulate('click');
+  expect(instance.state.isLocked).toBe(false);
+  button.simulate('click');
+  expect(instance.state.isLocked).toBe(true);
+})
+
+//button test 3
 it('should alert the user when the message button is clicked', () => {
   let alertCalled = false;
   window.alert = jest.fn(() => {

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should receive props 1`] = `ShallowWrapper {}`;
+
+exports[`should start with props of 0 1`] = `ShallowWrapper {}`;
