@@ -21,14 +21,39 @@ it('should start with props of 0', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-test.todo('should show the right number for strikes');
+it('should show the right number for strikes', () => {
+  const wrapper = shallow(<Display strikes={2} />)
+  expect(wrapper).toMatchSnapshot();
+});
 
-test.todo('should show the right number for balls');
+it('should show the right number for balls', () => {
+  const wrapper = shallow(<Display balls={2} />)
+  expect(wrapper).toMatchSnapshot();
+});
 
-test.todo('should show the right number for fouls');
+it('should show the right number for fouls', () => {
+  const wrapper = shallow(<Display fouls={2} />)
+  expect(wrapper).toMatchSnapshot();
+});
 
-test.todo('should show the right number for outs');
+it('should show the right number for outs', () => {
+  const wrapper = shallow(<Display outs={2} />)
+  expect(wrapper).toMatchSnapshot();
+});
 
-test.todo('should show the right number for hits');
+it('should show the right number for hits', () => {
+  const wrapper = shallow(<Display hits={5} />)
+  expect(wrapper).toMatchSnapshot();
+});
 
-test.todo('should alert end of inning at 3 strikes');
+// it('should alert end of inning at 3 outs', () => {
+//   let alertCalled = false;
+//   window.alert = jest.fn(() => {
+//     alertCalled = true
+//   })
+
+//   const wrapper = shallow(<Display outs={3} />)
+//   const button = wrapper.find('.alert');
+//   button.simulate('click');
+//   expect(alertCalled).toBe(true);
+// });

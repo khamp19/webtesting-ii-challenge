@@ -2,4 +2,14 @@
 
 exports[`should receive props 1`] = `ShallowWrapper {}`;
 
+exports[`should show the right number for balls 1`] = `ShallowWrapper {}`;
+
+exports[`should show the right number for fouls 1`] = `ShallowWrapper {}`;
+
+exports[`should show the right number for hits 1`] = `ShallowWrapper {}`;
+
+exports[`should show the right number for outs 1`] = `ShallowWrapper {}`;
+
+exports[`should show the right number for strikes 1`] = `ShallowWrapper {}`;
+
 exports[`should start with props of 0 1`] = `ShallowWrapper {}`;
